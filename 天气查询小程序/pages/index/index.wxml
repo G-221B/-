@@ -1,0 +1,5 @@
+<view class="container">
+  <p class="content">天气查询</p>
+  <input type="type" class="local" placeholder="输出查询城市" bindinput="handlechange"></input>
+  <button class="check" bindtap="handlesubmit">查询</button>
+</view>

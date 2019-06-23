@@ -1,0 +1,26 @@
+page{
+	height: 100%;
+	width: 100%;
+}
+.container{
+	background-color: #666;
+}
+.local{
+	border: 2px solid white;
+	width: 200px;
+	height: 40px;
+	border-radius: 5px;
+	margin-top: 50px;
+	text-align: center;
+}
+.check{
+	width: 200px;
+	text-align: center;
+	background-color: white;
+	opacity: 0.9;
+}
+.content{
+	font-size: 25px;
+	color:white;
+	margin-top: 150px;
+}

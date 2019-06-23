@@ -1,0 +1,66 @@
+<view class="container">
+	<view class="local">
+		<image src="http://i1.fuimg.com/691547/5127147d3bbd82d4.png" class="local-logo"></image>
+		<p class="local-name">{{local_id}}</p>
+	</view>
+	<view class="weather">
+		<view class="weather-num">
+			{{value.wendu}}°
+		</view>
+		<view class="weather-type">
+			{{value.forecast[0].type}}
+		</view>
+		<view class="weather-logo">
+			<image src="{{type}}"></image>
+		</view>
+		<view class="weather-fx">
+			{{value.forecast[0].fengxiang}}
+		</view>
+		<view class="low-high">
+			<view class="weather-high">
+				{{value.forecast[0].high}}
+			</view>
+			<view class="weather-low">
+				{{value.forecast[0].low}}
+			</view>
+		</view>
+		<view class="time">
+			<view class="day-1">
+				<view class="time-1">昨天</view>
+				<view class="time-2">{{value.yesterday.date}}</view>
+				<image src="{{src}}" class="time-logo"></image>
+				<view class="time-3">{{value.yesterday.high}}</view>
+				<view class="time-4">{{value.yesterday.low}}</view>
+				<view class="time-5">{{value.yesterday.type}}</view>
+				<view class="time-6">{{value.yesterday.fx}}</view>
+			</view>
+			<view class="day-2">
+				<view class="time-1">今天</view>
+				<view class="time-2">{{value.forecast[0].date}}</view>
+				<image src="{{type}}" class="time-logo"></image>
+				<view class="time-3">{{value.forecast[0].high}}</view>
+				<view class="time-4">{{value.forecast[0].low}}</view>
+				<view class="time-5">{{value.forecast[0].type}}</view>
+				<view class="time-6">{{value.forecast[0].fengxiang}}</view>
+			</view>
+			<view class="day-3">
+				<view class="time-1">明天</view>
+				<view class="time-2">{{value.forecast[1].date}}</view>
+				<image src="{{typeo}}" class="time-logo"></image>
+				<view class="time-3">{{value.forecast[1].high}}</view>
+				<view class="time-4">{{value.forecast[1].low}}</view>
+				<view class="time-5">{{value.forecast[1].type}}</view>
+				<view class="time-6">{{value.forecast[1].fengxiang}}</view>
+			</view>
+			<view class="day-4">
+				<view class="time-1">后天</view>
+				<view class="time-2">{{value.forecast[2].date}}</view>
+				<image src="{{typet}}" class="time-logo"></image>
+				<view class="time-3">{{value.forecast[2].high}}</view>
+				<view class="time-4">{{value.forecast[2].low}}</view>
+				<view class="time-5">{{value.forecast[2].type}}</view>
+				<view class="time-6">{{value.forecast[2].fengxiang}}</view>
+		</view>
+	</view>
+	</view>
+</view>
